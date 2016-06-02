@@ -1,0 +1,790 @@
+fileFormatVersion: 2
+guid: 5f18e7738939a2a42990714a8ff27e90
+timeCreated: 1459127698
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Altar_Champer
+    100002: Altar_Champer2
+    100004: Altar_Champer6
+    100006: Altar_Piece
+    100008: Altar_Piece2
+    100010: Altar_Piece3
+    100012: Arena_Ground
+    100014: Arena_Limit
+    100016: Basics
+    100018: Big_Pillars
+    100020: Big_Pillarz
+    100022: BigPillar1
+    100024: BigPillar1_Body
+    100026: BigPillar1_Body 1
+    100028: BigPillar1_Body 2
+    100030: BigPillar1_Body 3
+    100032: BigPillar1_Body 4
+    100034: BigPillar1_Body 5
+    100036: BigPillar1_Capital
+    100038: BigPillar1_Capital 1
+    100040: BigPillar1_Capital 2
+    100042: BigPillar1_Capital 3
+    100044: BigPillar1_Capital 4
+    100046: BigPillar1_Capital 5
+    100048: BigPillar1_Pedestal
+    100050: BigPillar1_Pedestal 1
+    100052: BigPillar1_Pedestal 2
+    100054: BigPillar1_Pedestal 3
+    100056: BigPillar1_Pedestal 4
+    100058: BigPillar1_Pedestal 5
+    100060: BigPillar2
+    100062: BigPillar3
+    100064: BigPillar4
+    100066: BigPillar5
+    100068: BigPillar6
+    100070: Cathedral_Base
+    100072: Cathedral_Base1
+    100074: Cathedral_Dome_Frame
+    100076: Cathedral_Dome_Inside
+    100078: Cathedral_Dome_Outside
+    100080: Cathedral_Ground
+    100082: Cathedral_Walls1
+    100084: Cathedral_Walls2
+    100086: Cathedral_Walls3
+    100088: Cathedral_Walls4
+    100090: Cathedral_Walls5
+    100092: Cathedral_Walls6
+    100094: Ceiling_Eye
+    100096: //RootNode
+    100098: Circle_L1
+    100100: Circle_L1 1
+    100102: Circle_L2
+    100104: Circle_L2 1
+    100106: Circle_L3
+    100108: Circle_L3 1
+    100110: Dome
+    100112: Entrance
+    100114: Entrance_Door
+    100116: Entrance_Floor
+    100118: Entrance_Hall
+    100120: Eye
+    100122: EyeSphere
+    100124: Ground
+    100126: Left
+    100128: Man
+    100130: Man_Huge2
+    100132: Mantis_Head1_pCube3
+    100134: Mid_Wall
+    100136: pCone1
+    100138: pCylinder18
+    100140: Pedestal
+    100142: Pedestal2
+    100144: polySurface44
+    100146: polySurface45
+    100148: polySurface46
+    100150: polySurface47
+    100152: polySurface48
+    100154: polySurface49
+    100156: polySurface49 1
+    100158: polySurface50
+    100160: polySurface50 1
+    100162: polySurface51
+    100164: polySurface52
+    100166: polySurface71
+    100168: polySurface72
+    100170: polySurface73
+    100172: polySurface73 1
+    100174: polySurface74
+    100176: polySurface74 1
+    100178: polySurface75
+    100180: polySurface75 1
+    100182: polySurface76
+    100184: polySurface76 1
+    100186: polySurface77
+    100188: polySurface77 1
+    100190: polySurface78
+    100192: polySurface78 1
+    100194: polySurface79
+    100196: polySurface80
+    100198: polySurface81
+    100200: polySurface82
+    100202: polySurface83
+    100204: polySurface83 1
+    100206: polySurface84
+    100208: polySurface84 1
+    100210: polySurface85
+    100212: polySurface85 1
+    100214: polySurface86
+    100216: polySurface86 1
+    100218: polySurface87
+    100220: polySurface87 1
+    100222: polySurface88
+    100224: polySurface88 1
+    100226: polySurface89
+    100228: polySurface89 1
+    100230: polySurface90
+    100232: polySurface90 1
+    100234: polySurface91
+    100236: polySurface91 1
+    100238: polySurface92
+    100240: polySurface92 1
+    100242: polySurface93
+    100244: polySurface93 1
+    100246: polySurface94
+    100248: polySurface94 1
+    100250: polySurface95
+    100252: polySurface96
+    100254: pSphere1
+    100256: Right
+    100258: Sarcophagus
+    100260: Small_Pillars
+    100262: SmallPillar1
+    100264: SmallPillar1_Body
+    100266: SmallPillar1_Feet
+    100268: SmallPillar1_Head
+    100270: SmallPillar2
+    100272: SmallPillar2_Body
+    100274: SmallPillar2_Feet
+    100276: SmallPillar2_Head
+    100278: SmallPillar3
+    100280: SmallPillar3_Body
+    100282: SmallPillar3_Feet
+    100284: SmallPillar3_Head
+    100286: SmallPillar4
+    100288: SmallPillar4_Body
+    100290: SmallPillar4_Feet
+    100292: SmallPillar4_Head
+    100294: transform1
+    100296: Visible_boundary
+    100298: Window_Base_L
+    100300: Window_Base_L 1
+    100302: Window_Glass_L1
+    100304: Window_Glass_L1 1
+    100306: Window_Glass_L2
+    100308: Window_Glass_L2 1
+    100310: Window_Glass_L3
+    100312: Window_Glass_L3 1
+    100314: Window_Glasses_L
+    100316: Window_Glasses_L 1
+    100318: Window_L1
+    100320: Window_L1 1
+    100322: Window_L1_Bevel
+    100324: Window_L1_Bevel 1
+    100326: Window_L2
+    100328: Window_L2 1
+    100330: Window_L2_Bevel
+    100332: Window_L2_Bevel 1
+    100334: Window_L3
+    100336: Window_L3 1
+    100338: Window_L3_Bevel
+    100340: Window_L3_Bevel 1
+    100342: WindowL_Bar1
+    100344: WindowL_Bar1 1
+    100346: WindowL_Bar2
+    100348: WindowL_Bar2 1
+    100350: WindowL_Bar3
+    100352: WindowL_Bar3 1
+    100354: Windows_Left
+    100356: Windows_Right
+    400000: Altar_Champer
+    400002: Altar_Champer2
+    400004: Altar_Champer6
+    400006: Altar_Piece
+    400008: Altar_Piece2
+    400010: Altar_Piece3
+    400012: Arena_Ground
+    400014: Arena_Limit
+    400016: Basics
+    400018: Big_Pillars
+    400020: Big_Pillarz
+    400022: BigPillar1
+    400024: BigPillar1_Body
+    400026: BigPillar1_Body 1
+    400028: BigPillar1_Body 2
+    400030: BigPillar1_Body 3
+    400032: BigPillar1_Body 4
+    400034: BigPillar1_Body 5
+    400036: BigPillar1_Capital
+    400038: BigPillar1_Capital 1
+    400040: BigPillar1_Capital 2
+    400042: BigPillar1_Capital 3
+    400044: BigPillar1_Capital 4
+    400046: BigPillar1_Capital 5
+    400048: BigPillar1_Pedestal
+    400050: BigPillar1_Pedestal 1
+    400052: BigPillar1_Pedestal 2
+    400054: BigPillar1_Pedestal 3
+    400056: BigPillar1_Pedestal 4
+    400058: BigPillar1_Pedestal 5
+    400060: BigPillar2
+    400062: BigPillar3
+    400064: BigPillar4
+    400066: BigPillar5
+    400068: BigPillar6
+    400070: Cathedral_Base
+    400072: Cathedral_Base1
+    400074: Cathedral_Dome_Frame
+    400076: Cathedral_Dome_Inside
+    400078: Cathedral_Dome_Outside
+    400080: Cathedral_Ground
+    400082: Cathedral_Walls1
+    400084: Cathedral_Walls2
+    400086: Cathedral_Walls3
+    400088: Cathedral_Walls4
+    400090: Cathedral_Walls5
+    400092: Cathedral_Walls6
+    400094: Ceiling_Eye
+    400096: //RootNode
+    400098: Circle_L1
+    400100: Circle_L1 1
+    400102: Circle_L2
+    400104: Circle_L2 1
+    400106: Circle_L3
+    400108: Circle_L3 1
+    400110: Dome
+    400112: Entrance
+    400114: Entrance_Door
+    400116: Entrance_Floor
+    400118: Entrance_Hall
+    400120: Eye
+    400122: EyeSphere
+    400124: Ground
+    400126: Left
+    400128: Man
+    400130: Man_Huge2
+    400132: Mantis_Head1_pCube3
+    400134: Mid_Wall
+    400136: pCone1
+    400138: pCylinder18
+    400140: Pedestal
+    400142: Pedestal2
+    400144: polySurface44
+    400146: polySurface45
+    400148: polySurface46
+    400150: polySurface47
+    400152: polySurface48
+    400154: polySurface49
+    400156: polySurface49 1
+    400158: polySurface50
+    400160: polySurface50 1
+    400162: polySurface51
+    400164: polySurface52
+    400166: polySurface71
+    400168: polySurface72
+    400170: polySurface73
+    400172: polySurface73 1
+    400174: polySurface74
+    400176: polySurface74 1
+    400178: polySurface75
+    400180: polySurface75 1
+    400182: polySurface76
+    400184: polySurface76 1
+    400186: polySurface77
+    400188: polySurface77 1
+    400190: polySurface78
+    400192: polySurface78 1
+    400194: polySurface79
+    400196: polySurface80
+    400198: polySurface81
+    400200: polySurface82
+    400202: polySurface83
+    400204: polySurface83 1
+    400206: polySurface84
+    400208: polySurface84 1
+    400210: polySurface85
+    400212: polySurface85 1
+    400214: polySurface86
+    400216: polySurface86 1
+    400218: polySurface87
+    400220: polySurface87 1
+    400222: polySurface88
+    400224: polySurface88 1
+    400226: polySurface89
+    400228: polySurface89 1
+    400230: polySurface90
+    400232: polySurface90 1
+    400234: polySurface91
+    400236: polySurface91 1
+    400238: polySurface92
+    400240: polySurface92 1
+    400242: polySurface93
+    400244: polySurface93 1
+    400246: polySurface94
+    400248: polySurface94 1
+    400250: polySurface95
+    400252: polySurface96
+    400254: pSphere1
+    400256: Right
+    400258: Sarcophagus
+    400260: Small_Pillars
+    400262: SmallPillar1
+    400264: SmallPillar1_Body
+    400266: SmallPillar1_Feet
+    400268: SmallPillar1_Head
+    400270: SmallPillar2
+    400272: SmallPillar2_Body
+    400274: SmallPillar2_Feet
+    400276: SmallPillar2_Head
+    400278: SmallPillar3
+    400280: SmallPillar3_Body
+    400282: SmallPillar3_Feet
+    400284: SmallPillar3_Head
+    400286: SmallPillar4
+    400288: SmallPillar4_Body
+    400290: SmallPillar4_Feet
+    400292: SmallPillar4_Head
+    400294: transform1
+    400296: Visible_boundary
+    400298: Window_Base_L
+    400300: Window_Base_L 1
+    400302: Window_Glass_L1
+    400304: Window_Glass_L1 1
+    400306: Window_Glass_L2
+    400308: Window_Glass_L2 1
+    400310: Window_Glass_L3
+    400312: Window_Glass_L3 1
+    400314: Window_Glasses_L
+    400316: Window_Glasses_L 1
+    400318: Window_L1
+    400320: Window_L1 1
+    400322: Window_L1_Bevel
+    400324: Window_L1_Bevel 1
+    400326: Window_L2
+    400328: Window_L2 1
+    400330: Window_L2_Bevel
+    400332: Window_L2_Bevel 1
+    400334: Window_L3
+    400336: Window_L3 1
+    400338: Window_L3_Bevel
+    400340: Window_L3_Bevel 1
+    400342: WindowL_Bar1
+    400344: WindowL_Bar1 1
+    400346: WindowL_Bar2
+    400348: WindowL_Bar2 1
+    400350: WindowL_Bar3
+    400352: WindowL_Bar3 1
+    400354: Windows_Left
+    400356: Windows_Right
+    2300000: Arena_Ground
+    2300002: Arena_Limit
+    2300004: Big_Pillarz
+    2300006: BigPillar1_Body
+    2300008: BigPillar1_Body 1
+    2300010: BigPillar1_Body 2
+    2300012: BigPillar1_Body 3
+    2300014: BigPillar1_Body 4
+    2300016: BigPillar1_Body 5
+    2300018: BigPillar1_Capital
+    2300020: BigPillar1_Capital 1
+    2300022: BigPillar1_Capital 2
+    2300024: BigPillar1_Capital 3
+    2300026: BigPillar1_Capital 4
+    2300028: BigPillar1_Capital 5
+    2300030: BigPillar1_Pedestal
+    2300032: BigPillar1_Pedestal 1
+    2300034: BigPillar1_Pedestal 2
+    2300036: BigPillar1_Pedestal 3
+    2300038: BigPillar1_Pedestal 4
+    2300040: BigPillar1_Pedestal 5
+    2300042: Cathedral_Base
+    2300044: Cathedral_Base1
+    2300046: Cathedral_Dome_Frame
+    2300048: Cathedral_Dome_Inside
+    2300050: Cathedral_Dome_Outside
+    2300052: Cathedral_Ground
+    2300054: Cathedral_Walls1
+    2300056: Cathedral_Walls2
+    2300058: Cathedral_Walls3
+    2300060: Cathedral_Walls4
+    2300062: Cathedral_Walls5
+    2300064: Ceiling_Eye
+    2300066: Entrance_Floor
+    2300068: Eye
+    2300070: EyeSphere
+    2300072: Ground
+    2300074: Man_Huge2
+    2300076: Mid_Wall
+    2300078: pCone1
+    2300080: pCylinder18
+    2300082: Pedestal
+    2300084: Pedestal2
+    2300086: polySurface44
+    2300088: polySurface45
+    2300090: polySurface46
+    2300092: polySurface47
+    2300094: polySurface48
+    2300096: polySurface49
+    2300098: polySurface49 1
+    2300100: polySurface50
+    2300102: polySurface50 1
+    2300104: polySurface51
+    2300106: polySurface52
+    2300108: polySurface72
+    2300110: polySurface73
+    2300112: polySurface73 1
+    2300114: polySurface74
+    2300116: polySurface74 1
+    2300118: polySurface75
+    2300120: polySurface75 1
+    2300122: polySurface76
+    2300124: polySurface76 1
+    2300126: polySurface77
+    2300128: polySurface77 1
+    2300130: polySurface78
+    2300132: polySurface78 1
+    2300134: polySurface79
+    2300136: polySurface80
+    2300138: polySurface81
+    2300140: polySurface82
+    2300142: polySurface83
+    2300144: polySurface83 1
+    2300146: polySurface84
+    2300148: polySurface84 1
+    2300150: polySurface85
+    2300152: polySurface85 1
+    2300154: polySurface86
+    2300156: polySurface86 1
+    2300158: polySurface87
+    2300160: polySurface87 1
+    2300162: polySurface88
+    2300164: polySurface88 1
+    2300166: polySurface89
+    2300168: polySurface89 1
+    2300170: polySurface90
+    2300172: polySurface90 1
+    2300174: polySurface91
+    2300176: polySurface91 1
+    2300178: polySurface92
+    2300180: polySurface92 1
+    2300182: polySurface93
+    2300184: polySurface93 1
+    2300186: polySurface94
+    2300188: polySurface94 1
+    2300190: polySurface95
+    2300192: polySurface96
+    2300194: pSphere1
+    2300196: Sarcophagus
+    2300198: SmallPillar1_Body
+    2300200: SmallPillar1_Feet
+    2300202: SmallPillar1_Head
+    2300204: SmallPillar2_Body
+    2300206: SmallPillar2_Feet
+    2300208: SmallPillar2_Head
+    2300210: SmallPillar3_Body
+    2300212: SmallPillar3_Feet
+    2300214: SmallPillar3_Head
+    2300216: SmallPillar4_Body
+    2300218: SmallPillar4_Feet
+    2300220: SmallPillar4_Head
+    2300222: Visible_boundary
+    2300224: Window_Base_L
+    2300226: Window_Base_L 1
+    2300228: Window_Glass_L1
+    2300230: Window_Glass_L1 1
+    2300232: Window_Glass_L2
+    2300234: Window_Glass_L2 1
+    2300236: Window_Glass_L3
+    2300238: Window_Glass_L3 1
+    3300000: Arena_Ground
+    3300002: Arena_Limit
+    3300004: Big_Pillarz
+    3300006: BigPillar1_Body
+    3300008: BigPillar1_Body 1
+    3300010: BigPillar1_Body 2
+    3300012: BigPillar1_Body 3
+    3300014: BigPillar1_Body 4
+    3300016: BigPillar1_Body 5
+    3300018: BigPillar1_Capital
+    3300020: BigPillar1_Capital 1
+    3300022: BigPillar1_Capital 2
+    3300024: BigPillar1_Capital 3
+    3300026: BigPillar1_Capital 4
+    3300028: BigPillar1_Capital 5
+    3300030: BigPillar1_Pedestal
+    3300032: BigPillar1_Pedestal 1
+    3300034: BigPillar1_Pedestal 2
+    3300036: BigPillar1_Pedestal 3
+    3300038: BigPillar1_Pedestal 4
+    3300040: BigPillar1_Pedestal 5
+    3300042: Cathedral_Base
+    3300044: Cathedral_Base1
+    3300046: Cathedral_Dome_Frame
+    3300048: Cathedral_Dome_Inside
+    3300050: Cathedral_Dome_Outside
+    3300052: Cathedral_Ground
+    3300054: Cathedral_Walls1
+    3300056: Cathedral_Walls2
+    3300058: Cathedral_Walls3
+    3300060: Cathedral_Walls4
+    3300062: Cathedral_Walls5
+    3300064: Ceiling_Eye
+    3300066: Entrance_Floor
+    3300068: Eye
+    3300070: EyeSphere
+    3300072: Ground
+    3300074: Man_Huge2
+    3300076: Mid_Wall
+    3300078: pCone1
+    3300080: pCylinder18
+    3300082: Pedestal
+    3300084: Pedestal2
+    3300086: polySurface44
+    3300088: polySurface45
+    3300090: polySurface46
+    3300092: polySurface47
+    3300094: polySurface48
+    3300096: polySurface49
+    3300098: polySurface49 1
+    3300100: polySurface50
+    3300102: polySurface50 1
+    3300104: polySurface51
+    3300106: polySurface52
+    3300108: polySurface72
+    3300110: polySurface73
+    3300112: polySurface73 1
+    3300114: polySurface74
+    3300116: polySurface74 1
+    3300118: polySurface75
+    3300120: polySurface75 1
+    3300122: polySurface76
+    3300124: polySurface76 1
+    3300126: polySurface77
+    3300128: polySurface77 1
+    3300130: polySurface78
+    3300132: polySurface78 1
+    3300134: polySurface79
+    3300136: polySurface80
+    3300138: polySurface81
+    3300140: polySurface82
+    3300142: polySurface83
+    3300144: polySurface83 1
+    3300146: polySurface84
+    3300148: polySurface84 1
+    3300150: polySurface85
+    3300152: polySurface85 1
+    3300154: polySurface86
+    3300156: polySurface86 1
+    3300158: polySurface87
+    3300160: polySurface87 1
+    3300162: polySurface88
+    3300164: polySurface88 1
+    3300166: polySurface89
+    3300168: polySurface89 1
+    3300170: polySurface90
+    3300172: polySurface90 1
+    3300174: polySurface91
+    3300176: polySurface91 1
+    3300178: polySurface92
+    3300180: polySurface92 1
+    3300182: polySurface93
+    3300184: polySurface93 1
+    3300186: polySurface94
+    3300188: polySurface94 1
+    3300190: polySurface95
+    3300192: polySurface96
+    3300194: pSphere1
+    3300196: Sarcophagus
+    3300198: SmallPillar1_Body
+    3300200: SmallPillar1_Feet
+    3300202: SmallPillar1_Head
+    3300204: SmallPillar2_Body
+    3300206: SmallPillar2_Feet
+    3300208: SmallPillar2_Head
+    3300210: SmallPillar3_Body
+    3300212: SmallPillar3_Feet
+    3300214: SmallPillar3_Head
+    3300216: SmallPillar4_Body
+    3300218: SmallPillar4_Feet
+    3300220: SmallPillar4_Head
+    3300222: Visible_boundary
+    3300224: Window_Base_L
+    3300226: Window_Base_L 1
+    3300228: Window_Glass_L1
+    3300230: Window_Glass_L1 1
+    3300232: Window_Glass_L2
+    3300234: Window_Glass_L2 1
+    3300236: Window_Glass_L3
+    3300238: Window_Glass_L3 1
+    4300000: Ground
+    4300002: Visible_boundary
+    4300004: Sarcophagus
+    4300006: Man_Huge2
+    4300008: pCone1
+    4300010: Pedestal
+    4300012: polySurface44
+    4300014: polySurface45
+    4300016: polySurface46
+    4300018: Pedestal2
+    4300020: Eye
+    4300022: EyeSphere
+    4300024: polySurface51
+    4300026: polySurface52
+    4300028: polySurface49
+    4300030: polySurface50
+    4300032: Mid_Wall
+    4300034: polySurface47
+    4300036: polySurface48
+    4300038: Cathedral_Ground
+    4300040: polySurface95
+    4300042: polySurface96
+    4300044: polySurface72
+    4300046: polySurface81
+    4300048: polySurface82
+    4300050: polySurface79
+    4300052: polySurface80
+    4300054: Entrance_Floor
+    4300056: Cathedral_Dome_Inside
+    4300058: Cathedral_Dome_Frame
+    4300060: Cathedral_Dome_Outside
+    4300062: Ceiling_Eye
+    4300064: BigPillar1_Capital
+    4300066: BigPillar1_Body
+    4300068: BigPillar1_Pedestal
+    4300070: BigPillar1_Capital
+    4300072: BigPillar1_Body
+    4300074: BigPillar1_Pedestal
+    4300076: BigPillar1_Capital
+    4300078: BigPillar1_Body
+    4300080: BigPillar1_Pedestal
+    4300082: BigPillar1_Capital
+    4300084: BigPillar1_Body
+    4300086: BigPillar1_Pedestal
+    4300088: BigPillar1_Capital
+    4300090: BigPillar1_Body
+    4300092: BigPillar1_Pedestal
+    4300094: BigPillar1_Capital
+    4300096: BigPillar1_Body
+    4300098: BigPillar1_Pedestal
+    4300100: SmallPillar1_Head
+    4300102: SmallPillar1_Body
+    4300104: SmallPillar1_Feet
+    4300106: SmallPillar2_Head
+    4300108: SmallPillar2_Body
+    4300110: SmallPillar2_Feet
+    4300112: SmallPillar3_Head
+    4300114: SmallPillar3_Body
+    4300116: SmallPillar3_Feet
+    4300118: SmallPillar4_Head
+    4300120: SmallPillar4_Body
+    4300122: SmallPillar4_Feet
+    4300124: Cathedral_Base
+    4300126: Cathedral_Walls3
+    4300128: Cathedral_Walls2
+    4300130: Cathedral_Walls1
+    4300132: Arena_Ground
+    4300134: Arena_Limit
+    4300136: Cathedral_Base1
+    4300138: Big_Pillarz
+    4300140: Cathedral_Walls4
+    4300142: Cathedral_Walls5
+    4300144: pCylinder18
+    4300146: pSphere1
+    4300148: polySurface49
+    4300150: polySurface50
+    4300152: polySurface75
+    4300154: polySurface76
+    4300156: polySurface89
+    4300158: polySurface90
+    4300160: polySurface87
+    4300162: polySurface88
+    4300164: polySurface73
+    4300166: polySurface74
+    4300168: polySurface85
+    4300170: polySurface86
+    4300172: polySurface83
+    4300174: polySurface84
+    4300176: polySurface77
+    4300178: polySurface78
+    4300180: polySurface93
+    4300182: polySurface94
+    4300184: polySurface91
+    4300186: polySurface92
+    4300188: Window_Base_L
+    4300190: Window_Glass_L1
+    4300192: Window_Glass_L2
+    4300194: Window_Glass_L3
+    4300196: polySurface75
+    4300198: polySurface76
+    4300200: polySurface89
+    4300202: polySurface90
+    4300204: polySurface87
+    4300206: polySurface88
+    4300208: polySurface73
+    4300210: polySurface74
+    4300212: polySurface85
+    4300214: polySurface86
+    4300216: polySurface83
+    4300218: polySurface84
+    4300220: polySurface77
+    4300222: polySurface78
+    4300224: polySurface93
+    4300226: polySurface94
+    4300228: polySurface91
+    4300230: polySurface92
+    4300232: Window_Base_L
+    4300234: Window_Glass_L1
+    4300236: Window_Glass_L2
+    4300238: Window_Glass_L3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
