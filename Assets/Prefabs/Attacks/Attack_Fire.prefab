@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraScript: {fileID: 0}
+  damageDelt: {fileID: 0}
   attackDamage: 3
   isAttacking: 0
 --- !u!114 &11447176
@@ -324,6 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraScript: {fileID: 0}
+  damageDelt: {fileID: 0}
   attackDamage: 3
   isAttacking: 0
 --- !u!114 &11456036
@@ -338,6 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraScript: {fileID: 0}
+  damageDelt: {fileID: 0}
   attackDamage: 3
   isAttacking: 0
 --- !u!114 &11481032

@@ -103,6 +103,7 @@ public class PlayerScript : MonoBehaviour {
         }
         */
 
+        
         if (isTargeted)
         {
             // Calls thje function to show which hexes the player is holding
@@ -168,6 +169,13 @@ public class PlayerScript : MonoBehaviour {
         // print(this.gameObject.transform.tag + " " + spawnOne + " " + spawnTwo + " " + spawnThree + " " + spawnFour + " " + spawnFive + " " + spawnSix);
     }
 
+    public void checkRound()
+    {
+        if(roundCounter > roundCounter -1)
+        {
+            occultCloak = false;
+        }
+    }
     //Function to set the target to true so it will show the player's hexes
     public void SetToTrue()
     {

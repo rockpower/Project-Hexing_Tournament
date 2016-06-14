@@ -241,6 +241,7 @@ the other player cannot move there
             target = GameObject.FindGameObjectWithTag("Player2").transform;
             playerOneScript.DestroyHex();
             playerTwoScript.SetToTrue();
+            playerTwoScript.checkRound();
             playerTwoScript.roundCounter += 1;
             playerOneScript.GetComponent<PlayerMovement>().SetHexOccupied();
             playerTwoScript.GetComponent<PlayerMovement>().SetHexUnoccupied();
@@ -252,6 +253,7 @@ the other player cannot move there
             target = GameObject.FindGameObjectWithTag("Player3").transform;
             playerTwoScript.DestroyHex();
             playerThreeScript.SetToTrue();
+            playerThreeScript.checkRound();
             playerThreeScript.roundCounter += 1;
             playerTwoScript.GetComponent<PlayerMovement>().SetHexOccupied();
             playerThreeScript.GetComponent<PlayerMovement>().SetHexUnoccupied();
@@ -264,6 +266,7 @@ the other player cannot move there
             target = GameObject.FindGameObjectWithTag("Player").transform;
             playerThreeScript.DestroyHex();
             playerOneScript.SetToTrue();
+            playerOneScript.checkRound();
             playerOneScript.roundCounter += 1;
             playerThreeScript.GetComponent<PlayerMovement>().SetHexOccupied();
             playerOneScript.GetComponent<PlayerMovement>().SetHexUnoccupied();
@@ -286,35 +289,8 @@ the other player cannot move there
                     endTurnText.color = playerOneScript.playerColor;
                     target.GetComponent<PlayerScript>().actionPointText.enabled = false;
                     endTurnText.enabled = true;
-                    endTurn.enabled = true;
-
-                    // THESE ARE OLD STUFF!! MAY USE THEM IF NEW STUFF DOES NOT WORK!!
-                    //endTurn.GetComponent<Image>().color = playerOneScript.playerColor;
-                    // StartCoroutine(waitForEndTurnColor(playerOneScript));
-                    //endTurn.image.color = playerOneScript.playerColor;
-                    // StartCoroutine(waitForTurnEnd(GameObject.FindGameObjectWithTag("Player2"), playerOneScript, playerTwoScript));
-                    //playerTwoScript.SetToTrue();
                 }
             }
-
-            /*
-            else if (playerTwoScript.health > 0)
-            {
-                playerTwoScript.actionPoint = 6;
-                target = GameObject.FindGameObjectWithTag("Player2").transform;
-                playerOneScript.DestroyHex();
-                playerTwoScript.SetToTrue();
-            }
-
-            else
-            {
-                playerThreeScript.actionPoint = 6;
-                target = GameObject.FindGameObjectWithTag("Player3").transform;
-                playerTwoScript.DestroyHex();
-                playerThreeScript.SetToTrue();
-            }
-            */
-
             else
             {
                 playerTwoScript.actionPoint = 6;
@@ -323,8 +299,6 @@ the other player cannot move there
                 playerTwoScript.SetToTrue();
             }
         }
-
-
         else if (target.tag == "Player2")
         {
             if (playerTwoScript.health > 0)
@@ -336,11 +310,6 @@ the other player cannot move there
                     target.GetComponent<PlayerScript>().actionPointText.enabled = false;
                     endTurnText.enabled = true;
                     endTurn.enabled = true;
-
-                    //endTurn.GetComponent<Image>().color = playerTwoScript.playerColor;
-                    //StartCoroutine(waitForEndTurnColor(playerTwoScript));
-                    // StartCoroutine(waitForTurnEnd(GameObject.FindGameObjectWithTag("Player3"), playerTwoScript, playerThreeScript)); ;
-                    //  playerThreeScript.SetToTrue();
                 }
             }
 
@@ -352,9 +321,7 @@ the other player cannot move there
                 playerThreeScript.SetToTrue();
             }
         }
-
-
-
+        
         else if (target.tag == "Player3")
         {
             if (playerThreeScript.health > 0)
@@ -366,10 +333,6 @@ the other player cannot move there
                     target.GetComponent<PlayerScript>().actionPointText.enabled = false;
                     endTurnText.enabled = true;
                     endTurn.enabled = true;
-                    // StartCoroutine(waitForEndTurnColor(playerThreeScript));
-                    //endTurn.GetComponent<Image>().color = playerThreeScript.playerColor;
-                    // StartCoroutine(waitForTurnEnd(GameObject.FindGameObjectWithTag("Player"), playerOneScript, playerThreeScript));
-                    // playerOneScript.SetToTrue();
                 }
             }
 
