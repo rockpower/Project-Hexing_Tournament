@@ -17,7 +17,11 @@ public class WindScript : MonoBehaviour {
     public Texture unHighlighted;
     public Texture highlighted;
     public Texture selected;
+
+    //Variables for attacking
     public GameObject currentHex;
+    public GameObject windPreFab;
+    public GameObject wind;
 
     // Public Member Variables
     public bool isClicked;
@@ -31,12 +35,17 @@ public class WindScript : MonoBehaviour {
     {
         cameraScript = GameObject.Find("MainCamera").GetComponent<CameraScript>();
         playerScript = cameraScript.TargetReturn().GetComponent<PlayerScript>();
+        playerMovementScript = playerScript.GetComponent<PlayerMovement>();
+        mouseManager = GameObject.Find("GameManager").GetComponent<MouseManager>();
         // print(playerscript);
         isClicked = false;
     }
     void Update()
     {
-        if (isClicked)
+        if (!isClicked)
+            return;
+
+        else if (isClicked)
         {
             if (EventSystem.current.IsPointerOverGameObject())
             {
@@ -46,10 +55,15 @@ public class WindScript : MonoBehaviour {
 
             else if (Input.GetMouseButtonDown(0))
             {
-                Destroy(this.gameObject);
+                for (int index = 0; index < windPreFab.transform.childCount; ++index)
+                {
+                    wind.transform.GetChild(index).GetComponent<Attack_Trigger>().isAttacking = true;
+                    // print(fire.transform.GetChild(index).GetComponent<Attack_Trigger>().isAttacking);
+                }
                 playerScript.actionPoint -= 2;
                 cameraScript.isActive = false;
                 GetComponent<RawImage>().texture = unHighlighted;
+                StartCoroutine(WaitToDestroy());
             }
 
             else if (Input.GetMouseButtonDown(1))
@@ -57,8 +71,16 @@ public class WindScript : MonoBehaviour {
                 isClicked = false;
                 cameraScript.isActive = false;
                 GetComponent<RawImage>().texture = unHighlighted;
+                Destroy(wind);
             }
         }
+    }
+
+    IEnumerator WaitToDestroy()
+    {
+        yield return new WaitForSeconds(0.3f);
+        Destroy(this.gameObject);
+        Destroy(wind);
     }
 
     public void mouseHover()
@@ -79,6 +101,8 @@ public class WindScript : MonoBehaviour {
             isClicked = true;
             cameraScript.isActive = true;
             GetComponent<RawImage>().texture = selected;
+            currentHex = mouseManager.CurrentOccupiedHex();
+            wind = Instantiate(windPreFab, currentHex.transform.position, Quaternion.identity) as GameObject;
             // print(isClicked);
         }
     }

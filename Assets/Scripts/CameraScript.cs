@@ -135,7 +135,7 @@ the other player cannot move there
             if (distance > 0.1f)
             {
                 distance = 0.0f;
-                height = 9f;
+                height = 15f;
             }
 
             else

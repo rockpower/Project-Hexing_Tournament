@@ -17,7 +17,11 @@ public class LightningScript : MonoBehaviour {
     public Texture unHighlighted;
     public Texture highlighted;
     public Texture selected;
+
+    //Variables for attacking
     public GameObject currentHex;
+    public GameObject lightningPreFab;
+    public GameObject lightning;
 
     // Public Member Variables
     public bool isClicked;
@@ -31,13 +35,18 @@ public class LightningScript : MonoBehaviour {
     {
         cameraScript = GameObject.Find("MainCamera").GetComponent<CameraScript>();
         playerScript = cameraScript.TargetReturn().GetComponent<PlayerScript>();
+        playerMovementScript = playerScript.GetComponent<PlayerMovement>();
+        mouseManager = GameObject.Find("GameManager").GetComponent<MouseManager>();
         // print(playerscript);
         isClicked = false;
     }
 
     void Update()
     {
-        if (isClicked)
+        if (!isClicked)
+            return;
+
+        else if (isClicked)
         {
             if (EventSystem.current.IsPointerOverGameObject())
             {
@@ -47,10 +56,15 @@ public class LightningScript : MonoBehaviour {
 
             else if (Input.GetMouseButtonDown(0))
             {
-                Destroy(this.gameObject);
+                for (int index = 0; index < lightningPreFab.transform.childCount; ++index)
+                {
+                    lightning.transform.GetChild(index).GetComponent<Attack_Trigger>().isAttacking = true;
+                    // print(fire.transform.GetChild(index).GetComponent<Attack_Trigger>().isAttacking);
+                }
                 playerScript.actionPoint -= 2;
                 cameraScript.isActive = false;
                 GetComponent<RawImage>().texture = unHighlighted;
+                StartCoroutine(WaitToDestroy());
             }
 
             else if (Input.GetMouseButtonDown(1))
@@ -58,8 +72,16 @@ public class LightningScript : MonoBehaviour {
                 isClicked = false;
                 cameraScript.isActive = false;
                 GetComponent<RawImage>().texture = unHighlighted;
+                Destroy(lightning);
             }
         }
+    }
+
+    IEnumerator WaitToDestroy()
+    {
+        yield return new WaitForSeconds(0.3f);
+        Destroy(this.gameObject);
+        Destroy(lightning);
     }
 
     public void mouseHover()
@@ -80,6 +102,8 @@ public class LightningScript : MonoBehaviour {
             isClicked = true;
             cameraScript.isActive = true;
             GetComponent<RawImage>().texture = selected;
+            currentHex = mouseManager.CurrentOccupiedHex();
+            lightning = Instantiate(lightningPreFab, currentHex.transform.position, Quaternion.identity) as GameObject;
             // print(isClicked);
         }
     }

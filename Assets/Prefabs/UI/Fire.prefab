@@ -125,7 +125,7 @@ MonoBehaviour:
   highlighted: {fileID: 2800000, guid: a21d045b231b72b4986325170861acc7, type: 3}
   selected: {fileID: 2800000, guid: 26313e06077080f4c8cf2f653375b0cf, type: 3}
   currentHex: {fileID: 0}
-  firePreFab: {fileID: 178592, guid: c5d2ba1883238de4590f2c835f821e5c, type: 2}
+  firePreFab: {fileID: 120886, guid: c5d2ba1883238de4590f2c835f821e5c, type: 2}
   fire: {fileID: 0}
   isClicked: 0
 --- !u!222 &22239774
@@ -238,7 +238,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: firePreFab
       value: 
-      objectReference: {fileID: 178592, guid: c5d2ba1883238de4590f2c835f821e5c, type: 2}
+      objectReference: {fileID: 120886, guid: c5d2ba1883238de4590f2c835f821e5c, type: 2}
     - target: {fileID: 0}
       propertyPath: fire
       value: 

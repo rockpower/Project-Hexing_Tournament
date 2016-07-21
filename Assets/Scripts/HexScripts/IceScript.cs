@@ -17,7 +17,11 @@ public class IceScript : MonoBehaviour {
     public Texture unHighlighted;
     public Texture highlighted;
     public Texture selected;
+
+    // Variables needed for attack/defense
     public GameObject currentHex;
+    public GameObject icePreFab;
+    public GameObject ice;
 
     // Public Member Variables
     public bool isClicked;
@@ -31,13 +35,18 @@ public class IceScript : MonoBehaviour {
     {
         cameraScript = GameObject.Find("MainCamera").GetComponent<CameraScript>();
         playerScript = cameraScript.TargetReturn().GetComponent<PlayerScript>();
+        playerMovementScript = playerScript.GetComponent<PlayerMovement>();
+        mouseManager = GameObject.Find("GameManager").GetComponent<MouseManager>();
         // print(playerscript);
         isClicked = false;
     }
 
     void Update()
     {
-        if (isClicked)
+        if (!isClicked)
+            return;
+
+        else if (isClicked)
         {
             if (EventSystem.current.IsPointerOverGameObject())
             {
@@ -46,10 +55,15 @@ public class IceScript : MonoBehaviour {
 
             else if (Input.GetMouseButtonDown(0))
             {
-                Destroy(this.gameObject);
+                for (int index = 0; index < icePreFab.transform.childCount; ++index)
+                {
+                    ice.transform.GetChild(index).GetComponent<Attack_Trigger>().isAttacking = true;
+                    // print(fire.transform.GetChild(index).GetComponent<Attack_Trigger>().isAttacking);
+                }
                 playerScript.actionPoint -= 2;
                 cameraScript.isActive = false;
                 GetComponent<RawImage>().texture = unHighlighted;
+                StartCoroutine(WaitToDestroy());
             }
 
             else if (Input.GetMouseButtonDown(1))
@@ -57,8 +71,16 @@ public class IceScript : MonoBehaviour {
                 isClicked = false;
                 cameraScript.isActive = false;
                 GetComponent<RawImage>().texture = unHighlighted;
+                Destroy(ice);
             }
         }
+    }
+
+    IEnumerator WaitToDestroy()
+    {
+        yield return new WaitForSeconds(0.3f);
+        Destroy(this.gameObject);
+        Destroy(ice);
     }
 
     public void mouseHover()
@@ -79,6 +101,8 @@ public class IceScript : MonoBehaviour {
             isClicked = true;
             cameraScript.isActive = true;
             GetComponent<RawImage>().texture = selected;
+            currentHex = mouseManager.CurrentOccupiedHex();
+            ice = Instantiate(icePreFab, currentHex.transform.position, Quaternion.identity) as GameObject;
             // print(isClicked);
         }
     }

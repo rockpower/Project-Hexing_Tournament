@@ -41,6 +41,8 @@ public class DarkScript : MonoBehaviour {
 
     // Variables needed for attack/defense
     public GameObject currentHex;
+    public GameObject darkPreFab;
+    public GameObject dark;
 
     // Public Member Variables
     public bool isClicked;
@@ -66,7 +68,6 @@ public class DarkScript : MonoBehaviour {
 
     void Update()
     {
-        // parentHex = darkHex.transform.parent.GetComponent<RawImage>();
         if (isClicked)
         {
             // UIHighLightScript.Dark();
@@ -78,13 +79,19 @@ public class DarkScript : MonoBehaviour {
 
             else if (Input.GetMouseButtonDown(0))
             {
-                Destroy(this.gameObject);
+                for (int index = 0; index < darkPreFab.transform.childCount; ++index)
+                {
+                    dark.transform.GetChild(index).GetComponent<Attack_Trigger>().isAttacking = true;
+                    // print(fire.transform.GetChild(index).GetComponent<Attack_Trigger>().isAttacking);
+                }
+
                 // UIHighLightScript.NoShow();
                 playerScript.actionPoint -= 2;
                 isClicked = false;
                 cameraScript.isActive = false;
                 playerScript.occultCloak = true;
                 GetComponent<RawImage>().texture = unHighlighted;
+                StartCoroutine(WaitToDestroy());
             }
 
             else if (Input.GetMouseButtonDown(1))
@@ -93,6 +100,7 @@ public class DarkScript : MonoBehaviour {
                 isClicked = false;
                 cameraScript.isActive = false;
                 GetComponent<RawImage>().texture = unHighlighted;
+                Destroy(dark);
             }
             /*
             if (cameraScript.firstActive)
@@ -139,6 +147,13 @@ public class DarkScript : MonoBehaviour {
         }
     }
 
+    IEnumerator WaitToDestroy()
+    {
+        yield return new WaitForSeconds(0.3f);
+        Destroy(this.gameObject);
+        Destroy(dark);
+    }
+
     public void mouseHover()
     {
         GetComponent<RawImage>().texture = highlighted;
@@ -182,8 +197,10 @@ public class DarkScript : MonoBehaviour {
             cameraScript.isActive = true;
             GetComponent<RawImage>().texture = selected;
             currentHex = mouseManager.CurrentOccupiedHex();
-            // print(currentHex);
-            // UIHighLightScript = parentHex.gameObject.GetComponent<UIHighlightHex>();
+            dark = Instantiate(darkPreFab, currentHex.transform.position, Quaternion.identity) as GameObject;
+            
+                // print(currentHex);
+                // UIHighLightScript = parentHex.gameObject.GetComponent<UIHighlightHex>();
 
             // print(isClicked);
         }
