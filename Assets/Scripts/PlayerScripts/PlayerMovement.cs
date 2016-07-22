@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour {
 
     // Other Class Script
     public PlayerControl playerControl;
+    public Animator anim;
     public CameraScript cameraScript;
     public Hex hexScript;
     public HexMaker hexMap;
@@ -30,6 +31,9 @@ public class PlayerMovement : MonoBehaviour {
         playerControl = gameObject.GetComponent<PlayerControl>();
         //destination = transform.position;
 
+        //Retrieve Character Animator
+        anim = GetComponent<Animator>();
+        anim.Play("IdleAnim 1", -1);
 
         foreach (GameObject hex in hexMap.myHex)
         {
@@ -64,6 +68,9 @@ public class PlayerMovement : MonoBehaviour {
         // Make sure the velocity doesn't actually exceed the distance we want.
         velocity = Vector3.ClampMagnitude(velocity, dir.magnitude);
         transform.Translate(velocity);
+
+            //Play Running Animation
+            //anim.Play("Run_Anim_1", -1);
 
     }
 

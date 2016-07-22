@@ -2169,6 +2169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerControl: {fileID: 0}
+  anim: {fileID: 0}
   cameraScript: {fileID: 0}
   hexScript: {fileID: 0}
   hexMap: {fileID: 815744036}
@@ -2176,7 +2177,7 @@ MonoBehaviour:
   destination: {x: 0, y: 0, z: 0}
   map: {fileID: 0}
   occupiedHex: {fileID: 0}
-  initialStart: 58
+  initialStart: 57
 --- !u!114 &266233565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2246,7 +2247,7 @@ Animator:
   m_GameObject: {fileID: 266233562}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a8159beb4d5fba749b7eb678e7ab7e14, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe9a3596ca385d045bc7cb9fe2bfd503, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4238,6 +4239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerControl: {fileID: 0}
+  anim: {fileID: 0}
   cameraScript: {fileID: 0}
   hexScript: {fileID: 0}
   hexMap: {fileID: 815744036}
@@ -4585,6 +4587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerControl: {fileID: 0}
+  anim: {fileID: 0}
   cameraScript: {fileID: 0}
   hexScript: {fileID: 0}
   hexMap: {fileID: 815744036}
@@ -8711,7 +8714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21792a68dad4a8b49802c124943fc913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerOneScript: {fileID: 483197723}
+  playerOneScript: {fileID: 266233565}
   playerTwoScript: {fileID: 1850701208}
   playerThreeScript: {fileID: 507380897}
   endTurn: {fileID: 543948934}
@@ -17696,7 +17699,7 @@ GameObject:
   - 114: {fileID: 1850701207}
   - 54: {fileID: 1850701209}
   m_Layer: 0
-  m_Name: Player2
+  m_Name: Player2.2
   m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17788,6 +17791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerControl: {fileID: 0}
+  anim: {fileID: 0}
   cameraScript: {fileID: 0}
   hexScript: {fileID: 0}
   hexMap: {fileID: 815744036}
