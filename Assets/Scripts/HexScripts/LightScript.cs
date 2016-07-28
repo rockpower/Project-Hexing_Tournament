@@ -22,6 +22,7 @@ public class LightScript : MonoBehaviour {
     public GameObject currentHex;
     public GameObject lightPreFab;
     public GameObject light;
+    public GameObject lightPE;
 
     // Public Member Variables
     public bool isClicked;
@@ -80,7 +81,8 @@ public class LightScript : MonoBehaviour {
 
     IEnumerator WaitToDestroy()
     {
-        yield return new WaitForSeconds(0.5f);
+        lightPE = Instantiate(lightPE, currentHex.transform.position, Quaternion.identity) as GameObject;
+        yield return new WaitForSeconds(1f);
         Destroy(this.gameObject);
         Destroy(light);
     }
