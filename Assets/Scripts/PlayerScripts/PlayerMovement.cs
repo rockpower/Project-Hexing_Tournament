@@ -69,14 +69,8 @@ public class PlayerMovement : MonoBehaviour {
         velocity = Vector3.ClampMagnitude(velocity, dir.magnitude);
         transform.Translate(velocity);
 
-        if (velocity.x != 0 | velocity.y != 0 | velocity.z !=0)
-        {
             //Play Running Animation
-            anim.Play("Run_Anim_1", -1);
-        } else
-        {
-            anim.Play("IdleAnim 1", -1);
-        }
+            //anim.Play("Run_Anim_1", -1);
 
     }
 
