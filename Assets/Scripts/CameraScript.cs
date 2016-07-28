@@ -117,7 +117,7 @@ the other player cannot move there
                 break;
         }
 
-        //Locks the distance at eight 
+        //Locks the distance at 13 
         if (distance > 13.1f)
         {
             distance = 13.0f;
@@ -140,7 +140,7 @@ the other player cannot move there
 
             else
             {
-                distance = 8.0f;
+                distance = 7.0f;
             }
 
         }

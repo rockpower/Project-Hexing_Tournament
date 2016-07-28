@@ -12,6 +12,7 @@ public class FireScript : MonoBehaviour
     private PlayerMovement playerMovementScript;
     private UIHighlightHex UIHighLightScript;
     private MouseManager mouseManager;
+    //public Animator anim;
 
     // Public Unity Variabls
     public RawImage fireHex;
@@ -40,6 +41,8 @@ public class FireScript : MonoBehaviour
         mouseManager = GameObject.Find("GameManager").GetComponent<MouseManager>();
         // print(playerscript);
         isClicked = false;
+
+        //anim = GetComponent<>();
     }
 
     void Update()
