@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour {
         target = cameraScript.TargetReturn();
         if (target != transform)
             return;
-        
+
         // Move towards our destination
 
         // NOTE!  This just moves directly there, but really you'd want to feed
