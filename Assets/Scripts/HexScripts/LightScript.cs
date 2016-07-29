@@ -81,7 +81,9 @@ public class LightScript : MonoBehaviour {
 
     IEnumerator WaitToDestroy()
     {
-        lightPE = Instantiate(lightPE, currentHex.transform.position, Quaternion.identity) as GameObject;
+        // instantiate Light Particle effect
+        lightPE = Instantiate(lightPE, light.transform.position, Quaternion.identity) as GameObject;
+
         yield return new WaitForSeconds(1f);
         Destroy(this.gameObject);
         Destroy(light);

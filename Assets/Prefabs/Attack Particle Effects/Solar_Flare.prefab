@@ -61,6 +61,7 @@ GameObject:
   - 4: {fileID: 485500}
   - 198: {fileID: 19849362}
   - 199: {fileID: 19925948}
+  - 114: {fileID: 11483058}
   m_Layer: 0
   m_Name: Solar_Flare
   m_TagString: Untagged
@@ -599,6 +600,18 @@ Transform:
   - {fileID: 411640}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11483058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32cd7c4f725ef14baae3e4a5d63903f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 3
 --- !u!198 &19802506
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -31375,7 +31388,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.y
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: lifeTime
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 115788}

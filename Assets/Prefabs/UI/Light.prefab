@@ -101,6 +101,7 @@ MonoBehaviour:
   currentHex: {fileID: 0}
   lightPreFab: {fileID: 190164, guid: 9ab87ab8b09b1f14bbd0dbe5d339dccc, type: 2}
   light: {fileID: 0}
+  lightPE: {fileID: 115788, guid: a5b9b4de1db261e418d6964b000f1171, type: 2}
   isClicked: 0
 --- !u!114 &11486350
 MonoBehaviour:
@@ -263,6 +264,10 @@ Prefab:
       propertyPath: lightPreFab
       value: 
       objectReference: {fileID: 190164, guid: 9ab87ab8b09b1f14bbd0dbe5d339dccc, type: 2}
+    - target: {fileID: 0}
+      propertyPath: lightPE
+      value: 
+      objectReference: {fileID: 115788, guid: a5b9b4de1db261e418d6964b000f1171, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 136872}
